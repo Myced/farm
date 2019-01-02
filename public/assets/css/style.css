@@ -8211,3 +8211,28 @@ html.ie11 .dropdown-menu ul.menu li a {
 
 html.ie11 .bs-searchbox .form-control {
   width: 90%; }
+
+.text-dark
+{
+    color: #000;
+}
+
+.text-black
+{
+    color: #000;
+}
+
+.text-bold
+{
+    font-weight: bold;
+}
+
+.serif
+{
+    font-family: serif;
+}
+
+.border-bottom
+{
+    border-bottom: 1px solid #a4a4a4; 
+}

@@ -15,6 +15,10 @@ class CreateSubDivisionsTable extends Migration
     {
         Schema::create('sub_divisions', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('region_id');
+            $table->string('division_id');
+            $table->string('name');
+            $table->string('slug');
             $table->timestamps();
         });
     }

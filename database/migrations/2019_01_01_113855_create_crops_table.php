@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVillagesTable extends Migration
+class CreateCropsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateVillagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('villages', function (Blueprint $table) {
+        Schema::create('crops', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('region_id');
-            $table->string('division_id');
-            $table->string('subdivision_id');
-            $table->string('name');
-            $table->string('slug');
+            $table->string('farmer_id');
+            $table->string('crop');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateVillagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('villages');
+        Schema::dropIfExists('crops');
     }
 }

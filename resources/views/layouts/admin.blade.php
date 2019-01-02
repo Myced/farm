@@ -73,6 +73,8 @@
 
     @include('includes.scripts')
 
+    @include('includes.notification')
+
     @yield('scripts')
 
     <!-- Custom Js -->

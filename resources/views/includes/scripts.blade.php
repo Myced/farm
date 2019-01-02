@@ -12,3 +12,6 @@
 
 <!-- Waves Effect Plugin Js -->
 <script src="/plugins/node-waves/waves.js"></script>
+
+<!-- Bootstrap Notify Plugin Js -->
+<script src="/plugins/bootstrap-notify/bootstrap-notify.js"></script>
