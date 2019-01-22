@@ -1,8 +1,6 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
@@ -20,9 +18,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 
     Route::group(['prefix' => 'sub-division'], function(){
         Route::get('/', 'SubDivisionController@index')->name('subdivisions');
+        Route::post('/store', 'SubDivisionController@store')->name('sub-division.store');
+        Route::get('/destroy/{id}', 'SubDivisionController@destroy')->name('sub-division.destroy');
     });
 
     Route::group(['prefix' => 'village'], function(){
         Route::get('/', 'VillageController@index')->name('villages');
+        Route::post('/store', 'VillageController@store')->name('village.store');
+        Route::get('/destroy/{id}', 'VillageController@destroy')->name('village.destroy');
     });
 });

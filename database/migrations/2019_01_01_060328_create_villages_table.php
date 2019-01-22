@@ -17,7 +17,7 @@ class CreateVillagesTable extends Migration
             $table->increments('id');
             $table->string('region_id');
             $table->string('division_id');
-            $table->string('subdivision_id');
+            $table->string('sub_division_id');
             $table->string('name');
             $table->string('slug');
             $table->timestamps();
